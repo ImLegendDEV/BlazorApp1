@@ -1,0 +1,48 @@
+{
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7054",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:7054;http://localhost:5077"
+      },
+      "distributionName": ""
+    },
+    "Perfil 1": {
+      "commandName": "Executable",
+      "executablePath": "E:\\Repos\\BlazorApp1\\Client\\BlazorApp1.Client.csproj.user",
+      "sqlDebugging": true,
+      "nativeDebugging": true,
+      "jsWebView2Debugging": true
+    },
+    "Perfil 2": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}"
+    },
+    "Perfil 3": {
+      "commandName": "Executable"
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:12740",
+      "sslPort": 44334
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "serviceConnectorResourceId": "",
+      "containerPorts": "1433:1433",
+      "secretStore": "LocalSecretsFile",
+      "containerName": "mssql",
+      "containerImage": "mcr.microsoft.com/mssql/server:2019-latest",
+      "type": "mssql.container",
+      "connectionId": "ConnectionStrings"
+    },
+    "mssql1": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DefaultConnection"
+    }
+  }
+}
